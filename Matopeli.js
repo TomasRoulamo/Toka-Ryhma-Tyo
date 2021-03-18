@@ -1,0 +1,36 @@
+var grid = 15; // yhden ruudun pituus = grid
+var mato;
+var ruoka;
+
+
+
+function setup(){
+  createCanvas(300, 300); // Pelin alusta 300 x 300 pixeliä
+  frameRate(10); // framerate toimii madon nopeutena
+  mato = new Mato(); // mato on uusi mato objekti
+  ruoka = new Ruoka();
+}
+
+function draw(){
+  background(50); // Taustaväri
+  mato.update(); // päivittää matoa
+  ruoka.update(); // päivittää ruokaa
+  mato.show(); // näyttää madon
+  ruoka.show(); // näyttää ruuan
+}
+
+// Vastaan ottaa näppäin painallukset
+function keyPressed() {
+  if (keyCode === UP_ARROW && mato.yspeed !== 1) { // jos painaa ylöspäin nuolta ja mato ei voi mennä vastakkaiseen suuntaan esim. takaperin
+    mato.dir(0, -1); // Mato liikkuu ylös päin
+  }
+  else if (keyCode === DOWN_ARROW && mato.yspeed !== -1) {
+    mato.dir(0, 1); // Alaspäin
+  }
+  else if (keyCode === LEFT_ARROW && mato.xspeed !== 1) {
+    mato.dir(-1, 0); // Vasemmalle
+  }
+  else if (keyCode === RIGHT_ARROW && mato.xspeed !== -1) {
+    mato.dir(1, 0); // Oikealle
+  }
+}

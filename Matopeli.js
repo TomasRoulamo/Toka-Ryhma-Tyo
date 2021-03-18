@@ -8,7 +8,7 @@ function setup(){
   createCanvas(300, 300); // Pelin alusta 300 x 300 pixeliä
   frameRate(10); // framerate toimii madon nopeutena
   mato = new Mato(); // mato on uusi mato objekti
-  ruoka = new Ruoka();
+  ruoka = new Omena();
 }
 
 function draw(){

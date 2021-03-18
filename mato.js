@@ -1,7 +1,7 @@
 function Mato() {
   // Sijainti
   this.x = 0;
-  this.y = pal;
+  this.y = 0;
 
   // Nopeus
   this.xspeed = 1;
@@ -62,9 +62,9 @@ function Mato() {
       this.x = width;
     }
     if (this.y > height - grid) {
-      this.y = pal;
+      this.y = 0;
     }
-    if (this.y < pal) {
+    if (this.y < 0) {
       this.y = height;
     }
   }

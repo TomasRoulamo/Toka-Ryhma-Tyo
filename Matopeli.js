@@ -16,7 +16,7 @@ function draw(){
   mato.update(); // päivittää matoa
   ruoka.update(); // päivittää ruokaa
   mato.show(); // näyttää madon
-  ruoka.show(); // näyttää ruuan
+  ruoka.show(); // näyttää ruuan/omenan
 }
 
 // Vastaan ottaa näppäin painallukset

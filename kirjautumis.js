@@ -1,4 +1,4 @@
-var modal = document.getElementById('popup');
+var modal = document.getElementById('modaali');
 
 window.onclick = function(event) {
     if (event.target == modal) {

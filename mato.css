@@ -1,5 +1,5 @@
-/* Popupin tausta */
-.popup1 {
+/* Modalin tausta */
+.modal1 {
   display: none;
   position: fixed;
   left: 0;
@@ -12,8 +12,8 @@
   padding-top: 60px;
 }
 
-/* Modal Content/Box */
-.popup-sisalto {
+/* Modal sisältö */
+.modal-sisalto {
   background-color: #fefefe;
   margin: 5px auto;
   border: 1px solid #888;

@@ -15,15 +15,15 @@
   </head>
   <body>
     <!-- Nappula jolla kirjautumis kohta aukeaa -->
-    <button onclick="document.getElementById('popup').style.display='block'">Kirjaudu</button>
+    <button onclick="document.getElementById('modaali').style.display='block'" style="width:auto;">Kirjaudu</button>
 
-      <!-- Popup homma -->
-      <div id="popup" class="popup1">
-        <span onclick="document.getElementById('popup').style.display='none'"
+      <!-- Modal homma -->
+      <div id="popup" class="modal1">
+        <span onclick="document.getElementById('modaali').style.display='none'"
           class="sulje" title="Sulje">&times;</span>
 
-  <!-- Popupin osat -->
-  <form class="popup-sisalto animoi" action="">
+  <!-- Modalin osat -->
+  <form class="modal-sisalto animoi" action="/action_page.php">
    
     <div class="yla-osa">
       <label for="nimi"><b>Käyttäjänimi</b></label>

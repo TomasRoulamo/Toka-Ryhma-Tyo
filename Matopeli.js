@@ -6,7 +6,7 @@ var ruoka;
 
 function setup(){
   canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto;"; // canvas keskelle
-  createCanvas(300, 300); // Pelin alusta 300 x 300 pixeliä
+  createCanvas(600, 600); // Pelin alusta 300 x 300 pixeliä
   frameRate(10); // framerate toimii madon nopeutena
   mato = new Mato(); // mato on uusi mato objekti
   ruoka = new Omena();

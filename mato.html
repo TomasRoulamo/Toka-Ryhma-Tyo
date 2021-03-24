@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Matopeli</title>
-    <div id="nimijascore" display="Nimi"></div>
+    <div id="nimi" aria-placeholder="Nimi"></div>
     <script src="http://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/p5.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.dom.js"></script>    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.5.2/addons/p5.sound.js"></script>
@@ -11,7 +11,30 @@
     <link href="mato.css" rel="stylesheet">
     <script src="Mato.js" type="text/javascript"></script>
     <script src="Omena.js" type="text/javascript"></script>
+    <script src="kirjautumis.js" type="text/javascript"></script>
   </head>
   <body>
+    <!-- Nappula jolla kirjautumis kohta aukeaa -->
+    <button onclick="document.getElementById('popup').style.display='block'">Kirjaudu</button>
+
+      <!-- Popup homma -->
+      <div id="popup" class="popup1">
+        <span onclick="document.getElementById('popup').style.display='none'"
+          class="sulje" title="Sulje">&times;</span>
+
+  <!-- Popupin osat -->
+  <form class="popup-sisalto animoi" action="">
+   
+    <div class="yla-osa">
+      <label for="nimi"><b>Käyttäjänimi</b></label>
+      <input type="text" placeholder="Anna Käyttäjänimi" name="nimi" required>
+
+      <label for="salis"><b>Salasana</b></label>
+      <input type="password" placeholder="Anna Salasana" name="salis" required>
+
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</div>
   </body>
 </html>

@@ -71,7 +71,7 @@ function Mato() {
 
 // Tämä näyttää hännän palaset
   this.show = function() {
-    fill(255); // Madon väri
+    fill('rgb(0,255,0)'); // Madon väri
     for (var i = 0; i < this.häntä.length; i++) { // looppi kiertää hännän niin monta kertaa mitä hännän pituus on
       rect(this.häntä[i].x, this.häntä[i].y, grid, grid); // ja luo uuden neliön
     }

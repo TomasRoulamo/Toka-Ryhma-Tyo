@@ -5,15 +5,15 @@ var ruoka;
 
 
 function setup(){
-  canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto;"; // canvas keskelle
+  canvas.style = "position: absolute; top: 0px; left: 0px; right: 0px; bottom: 0px; margin: auto; border:5px solid green"; // canvas keskelle
   createCanvas(600, 600); // Pelin alusta 600 x 600 pixeliä
-  frameRate(10); // framerate toimii madon nopeutena
+  frameRate(12); // framerate toimii madon nopeutena
   mato = new Mato(); // mato on uusi mato objekti
   ruoka = new Omena();
 }
 
 function draw(){
-  background(50); // Taustaväri
+  background(153,102,0); // Taustaväri
   mato.update(); // päivittää matoa
   ruoka.update(); // päivittää ruokaa
   mato.show(); // näyttää madon

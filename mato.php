@@ -30,11 +30,11 @@ if ($result->num_rows > 0) {
 $kysely = "SELECT kayttajanimi, salasana FROM tiedot WHERE kayttajanimi = " .  $kayttis . " AND  salasana = " . $salis;
 $result2 = $yhteys->query($kysely);
 if ($result->num_rows > 0) {
-    header("Location: http://www.yourwebsite.com/user.php"); /* Redirect browser */
+    header("Location: "); /* Redirect browser */
     exit();
 }
     else {
-        echo "0 vastausta";
+        echo "väärä salasana";
     }
 $yhteys->close();
 ?>

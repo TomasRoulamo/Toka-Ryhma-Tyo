@@ -39,7 +39,7 @@ function Mato() {
       var d = dist(this.x, this.y, this.häntä[i].x, this.häntä[i].y); // tutkii madon ja hännän matkaa/sijainti
       if (d < 1) { // jos matka pienenpi kuin 1 peli resotoi
         this.resetoi();
-        console.log("KUOLIT"); // ilmoittaa kuoleman consoleen
+        console.log("KUOLIT"); // ilmoittaa kuoleman consoliin
       }
     }
   }
